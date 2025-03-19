@@ -1,20 +1,57 @@
+.navbar {
+    background-color:#181717; 
+    font-family: 'Nunito Sans', sans-serif;
+}
+  
+.nav-link {
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte dos links */
+    color: #ffffff;
+}
+  
 .section-1 {
     background-color: #d2b8a3;
-    padding: 100px 20px;
+    padding: 100px 20px; /* Pode ser ajustado para menos espaço em dispositivos menores */
+    font-family: 'Nunito Sans', sans-serif;
 }
+
 .section-1 .content {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Muda a direção para coluna em telas menores */
+    align-items: center; /* Centraliza o conteúdo */
     gap: 20px;
 }
+
 .section-1 img {
-    max-width: 400px;
+    max-width: 100%; /* A imagem ocupará toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
     border-radius: 10px;
 }
+
+/* Estilos adicionais para títulos e parágrafos em telas menores */
+@media (min-width: 768px) {
+    .section-1 .content {
+        flex-direction: row; /* Retorna para linha em telas maiores */
+        justify-content: space-between; /* Adiciona espaço entre os itens */
+    }
+
+    .section-1 img {
+        max-width: 400px; /* Limita o tamanho da imagem em telas maiores */
+    }
+
+    .section-1 h2 {
+        font-size: 40px; /* Tamanho de fonte do título em telas maiores */
+    }
+
+    .section-1 p {
+        font-size: 18px; /* Tamanho de fonte dos parágrafos */
+    }
+}
+
 .section-2, .section-3 {
     background-color: #6c4c39;
     color: white;
     padding: 100px 20px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .projects-container, .drawings-container {
     display: flex;
@@ -31,10 +68,55 @@
     border-radius: 10px;
 }
 
+#projectsCarousel {
+    max-width: 600px; /* Define a largura máxima do carrossel */
+    margin: auto; /* Centraliza o carrossel na página */
+}
+
+#projectsCarousel img {
+    max-width: 100%; /* Assegura que a imagem não exceda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+
+
+.section-4 {
+    background-color:#d2b8a3; /* Cor de fundo igual às seções de Projetos e Desenhos Técnicos */
+    color: white; /* Cor do texto */
+    padding: 100px 20px; /* Espaçamento interno */
+    font-family: 'Nunito Sans', sans-serif; /* Fonte usada nas seções */
+}
+
+.section-4 h2 {
+    margin-bottom: 30px; /* Margem abaixo do título */
+    font-weight: bold; /* Título em negrito */
+    color: #181717;
+}
+
+.section-4 .row {
+    color: #181717;
+    display: flex; /* Flexbox para organizar as colunas */
+    justify-content: space-around; /* Espaçamento igual entre colunas */
+    flex-wrap: wrap; /* Permite que as colunas quebrem para a linha seguinte em telas menores */
+}
+
+.section-4 .text-center {
+    color: #181717;
+    margin-bottom: 30px; /* Margem abaixo de cada item */
+}
+
+.section-4 img {
+    width: 100%; /* Imagens ocupam a largura total da coluna */
+    max-width: 150px; /* Tamanho máximo para as imagens */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
 
 .section-contato {
     background-color: #d2b8a3; /* Cor de fundo bege sofisticada */
     color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
   }
   
   .contact-card {
@@ -64,4 +146,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    font-family: 'Nunito Sans', sans-serif;
 }
