@@ -1,27 +1,67 @@
-.section-1{
-     background-color: #f8b400; 
-     padding: 100px 20px; 
+.section-1 {
+    background-color: #d2b8a3;
+    padding: 100px 20px;
+}
+.section-1 .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.section-1 img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+.section-2, .section-3 {
+    background-color: #6c4c39;
+    color: white;
+    padding: 100px 20px;
+}
+.projects-container, .drawings-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.project-item, .drawing-item {
+    width: 300px;
+    text-align: center;
+}
+.project-item img, .drawing-item img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.section-2 { 
-    background-color: #6a0572; 
-    color: white; 
-    padding: 100px 20px; 
-}
 
-.section-3 { 
-    background-color: #00917c; 
-    color: white; 
-    padding: 100px 20px; 
-}
-        
-.section-4 { background-color: #f94144; 
-    color: white; 
-    padding: 100px 20px; 
-}
+.section-contato {
+    background-color: #d2b8a3; /* Cor de fundo bege sofisticada */
+    color: #ffffff;
+  }
+  
+  .contact-card {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .contact-card i {
+    color: #d2b8a3; /* Ícones na mesma paleta de cores */
+    margin-right: 8px;
+  }
+  
+  .contact-card a {
+    color: #d2b8a3;
+    text-decoration: none;
+  }
+  
+  .contact-card a:hover {
+    text-decoration: underline;
+  }
+  
 
-footer { background: #222; 
-    color: white; 
-    text-align: center; 
-    padding: 20px; 
+
+
+footer {
+    background: #181717;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
