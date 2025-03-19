@@ -1,0 +1,27 @@
+.section-1{
+     background-color: #f8b400; 
+     padding: 100px 20px; 
+}
+
+.section-2 { 
+    background-color: #6a0572; 
+    color: white; 
+    padding: 100px 20px; 
+}
+
+.section-3 { 
+    background-color: #00917c; 
+    color: white; 
+    padding: 100px 20px; 
+}
+        
+.section-4 { background-color: #f94144; 
+    color: white; 
+    padding: 100px 20px; 
+}
+
+footer { background: #222; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
